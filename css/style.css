@@ -44,7 +44,7 @@ ul{
     top:0;
     right:0;
     padding-top: 90px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     background-color: aqua;
 }
 
@@ -64,27 +64,46 @@ ul{
 .top-sidebar{
     width: 100%;
     min-height: 400px;
-    background-color: rgb(0, 75, 129);
     border: 1px dashed rgb(255, 255, 255);
     
 }
 
-/* .sidebar .row{
-    flex-direction: column;
-} */
 .logo{
     width: calc(100% - 20px);
     margin: 10px;
-    min-height: 50px;
     border: 1px dashed rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+.logo .logo-big{
+    width: 100%;
+}
+
+.logo .logo-small{
+    display: none;
 }
 
 .menu{
     width: calc(100% - 20px);
     margin: 10px;
     min-height: 120px;
-    border: 1px dashed rgb(255, 255, 255);
+    border: 1px dashed rgb(109, 109, 109);
 }
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+}
+.menu ul li{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li img{
+    width: 20%;
+}
+
+
+
 
 .playlist{
     width: calc(100% - 20px);
@@ -124,7 +143,6 @@ ul{
 /* FINE BOTTOM-SIDEBAR */
 
 /****************** MAIN **************/
-
 /* TOP-BAR */
 
 .top-bar input{
@@ -144,26 +162,41 @@ ul{
     scale: 1.2;
 }
 
-
 /* FINe TOP-BAR */
-.content-albums .container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(255, 90, 90);
-}
 
-.content-albums .played, .jhon-doe{
-    margin-bottom: 30px;
-}
-
+/* CONTENUTI */
+/* Menu contenuti */
 .content-albums ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom:50px;
 }
+.content-albums ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.content-albums ul a:hover{
+}
+
+/* Fine Menu contenuti */
+
+.content-albums .container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 90, 90);
+}
 
 /* Recenlty Played */
+.content-albums .played, .jhon-doe{
+    margin-bottom: 30px;
+}
+
+
 .col-16{
     width: calc(100%/6 - 20px);
     margin: 10px;
@@ -173,7 +206,7 @@ ul{
 .col-16 img {
     width: 100%;
 }
-
+/* FINE CONTENUTI */
 /***************** FINE MAIN ***************/
  
 
@@ -218,15 +251,20 @@ ul{
     .row {
         flex-wrap: wrap;
     }
+    
     .sidebar{
         width: 70px;
     }
+    .logo .logo-small{
+        display: block;
+    }
+    .logo .logo-big{
+        display: none;
+    }
+    
+
     .top-bar{
         width: calc(100% - 70px);
-    }
-    .bottom-sidebar{
-        min-width: 70px;
-        
     }
     .main-content{
         width: calc(100% - 70px);
@@ -234,6 +272,12 @@ ul{
     .col-16{
         width: calc(100%/2 - 20px);
     }
+    .bottom-sidebar{
+        min-width: 70px;
+        
+    }
+
+    
 
 }
 
