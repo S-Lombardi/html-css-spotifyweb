@@ -17,6 +17,10 @@ body,input {
 ul{
     list-style-type: none;
 }
+
+a{
+    text-decoration: none;
+}
 /* UTILITà */
 
 
@@ -72,10 +76,9 @@ ul{
     width: calc(100% - 20px);
     margin: 10px;
     border: 1px dashed rgb(255, 255, 255);
-    margin-bottom: 40px;
 }
 .logo .logo-big{
-    width: 100%;
+    width: 80%;
 }
 
 .logo .logo-small{
@@ -90,8 +93,8 @@ ul{
 }
 
 .menu ul li a{
-    text-decoration: none;
     color: rgb(139, 139, 139);
+    font-size: 14px;
 }
 .menu ul li{
     display: flex;
@@ -101,18 +104,47 @@ ul{
 .menu ul li img{
     width: 20%;
 }
-
-
-
-
 .playlist{
     width: calc(100% - 20px);
     margin: 10px;
     min-height: 300px;
     border: 1px dashed rgb(255, 255, 255);
-    /* overflow-y: auto; */
+}
+
+.playlist span{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+.add-playlist{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.add-playlist .icon-plus{
+    font-size: 40px;
+    color: rgb(8, 8, 8);
+    padding: 0px 10px 0px 10px ;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
 
 }
+.add-playlist a:last-child{
+    color: gray;
+}
+
+.name-playlist li{
+    line-height: 30px;
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+
+
 /* FINE TOP-SIDEBAR */
 
 
@@ -251,18 +283,31 @@ ul{
     .row {
         flex-wrap: wrap;
     }
-    
+    /* Sidebar */
     .sidebar{
         width: 70px;
     }
     .logo .logo-small{
         display: block;
+        transform: scale(0.8);
     }
     .logo .logo-big{
         display: none;
     }
+    .sidebar .playlist {
+        display: none;
+    }
     
+    .top-sidebar .menu a{
+        display: none;
+    }
+    .top-sidebar .menu img{
+        width: 100%;
+        transform: scale(0.7);
+    }
 
+    /* Fine Sidebar */ 
+    
     .top-bar{
         width: calc(100% - 70px);
     }
