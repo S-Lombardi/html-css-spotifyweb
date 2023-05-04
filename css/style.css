@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.body,input {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* UTILITà */
 .row{
     width: 100%;
@@ -27,7 +31,7 @@ ul{
 }
 
 .top-bar{
-    width: 100%;
+    width: calc(100% - 200px);
     height: 80px;
     background-color: rgb(79, 79, 79);
     position: fixed;
@@ -121,6 +125,19 @@ ul{
 /* FINE BOTTOM-SIDEBAR */
 
 /****************** MAIN **************/
+
+/* TOP-BAR */
+
+.top-bar input{
+    position: absolute;
+    right: 20px;
+    padding:10px 50px;
+    top:20px
+
+}
+
+
+/* FINe TOP-BAR */
 .content-albums .container {
     width: 100%;
     margin: 0 auto;
@@ -132,7 +149,6 @@ ul{
 }
 
 .content-albums ul{
-    display: inline;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,6 +212,9 @@ ul{
     }
     .sidebar{
         width: 70px;
+    }
+    .top-bar{
+        width: calc(100% - 70px);
     }
     .bottom-sidebar{
         min-width: 70px;
