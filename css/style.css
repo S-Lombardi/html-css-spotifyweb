@@ -24,7 +24,6 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
-    /* overflow-y: auto; */
 }
 
 .top-bar{
@@ -57,29 +56,69 @@ ul{
 
 
 
-/* SIDEBAR */
-.col-menu{
-    width: calc(100% - 20px);
-    margin: 10px;
+/* TOP-SIDEBAR */
+.top-sidebar{
+    width: 100%;
     min-height: 400px;
     background-color: rgb(0, 75, 129);
-    border: 2px dashed rgb(255, 255, 255);
+    border: 1px dashed rgb(255, 255, 255);
 }
 
 /* .sidebar .row{
     flex-direction: column;
 } */
+.logo{
+    width: calc(100% - 20px);
+    margin: 10px;
+    min-height: 50px;
+    border: 1px dashed rgb(255, 255, 255);
+}
 
-.user-info{
-    width: 200px;
+.menu{
+    width: calc(100% - 20px);
+    margin: 10px;
+    min-height: 120px;
+    border: 1px dashed rgb(255, 255, 255);
+}
+
+.playlist{
+    width: calc(100% - 20px);
+    margin: 10px;
+    min-height: 300px;
+    border: 1px dashed rgb(255, 255, 255);
+    /* overflow-y: auto; */
+
+}
+/* FINE TOP-SIDEBAR */
+
+
+/* BOTTOM-SIDEBAR */
+.bottom-sidebar{
+    min-width: 200px;
     /* margin: 10px; */
     min-height: 100px;
     background-color: rgb(0, 149, 255);
-    border: 2px dashed rgb(255, 255, 255);
+    border: 1px dashed rgb(255, 255, 255);
     position: fixed;
     bottom: 90px;
 }
-/* FINE SIDEBAR */
+
+.download{
+    width: calc(100% - 20px);
+    margin: 10px;
+    min-height: 40px;
+    border: 1px dashed rgb(255, 255, 255);
+}
+
+.username{
+    width: calc(100% - 20px);
+    margin: 10px;
+    min-height: 40px;
+    border: 1px dashed rgb(255, 255, 255);
+}
+
+
+/* FINE BOTTOM-SIDEBAR */
 
 /****************** MAIN **************/
 .content-albums .container {
@@ -158,8 +197,8 @@ ul{
     .sidebar{
         width: 70px;
     }
-    .user-info{
-        width: 70px;
+    .bottom-sidebar{
+        min-width: 70px;
         
     }
     .main-content{
