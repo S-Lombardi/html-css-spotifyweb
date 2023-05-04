@@ -68,7 +68,7 @@ a{
 .top-sidebar{
     width: 100%;
     border: 1px dashed rgb(255, 255, 255);
-    
+
 }
 
 .logo{
@@ -162,7 +162,7 @@ a{
 }
 
 /* .wrap-name-playlist::-webkit-scrollbar-thumb{
-    background: red; 
+    background: red;
     border-radius: 10px;
 } */
 
@@ -261,7 +261,7 @@ a{
 }
 /* FINE CONTENUTI */
 /***************** FINE MAIN ***************/
- 
+
 
 /* BOTTOM BAR */
 .col-33{
@@ -269,10 +269,11 @@ a{
     margin: 10px;
     min-height: 100%;
     border: 1px dashed rgb(132, 132, 132);
-   
-}
 
+}
+/* Col-left */
 .bottom-bar .name-song{
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -283,17 +284,55 @@ a{
 
 .name-song ul li{
     margin-left:10px;
+    margin-right: 20px;
     color: white;
 }
 
-.bottom-bar .name-song .icons{
-    margin-left: 50px;
+.icons button{
+    border: none;
+    font-size: 17px;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+/* Col Center -Play */
+.audio-player{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*  Col right */
 
+.volume{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
+.volume button{
+    border: none;
+    font-size: 15px;
+    color: rgb(224, 224, 224);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+}
 
+.line-volume{
+    width: 90px;
+    height: 4px;
+    border-radius: 4px;
+    background: rgb(124, 124, 124);
+}
 
+.line-inside{
+    height: 4px;
+    width: 20%;
+    border-radius: 4px;
+    background-color: white;
 
+}
 
 
 /* FINE BOTTOM BAR */
@@ -340,7 +379,7 @@ a{
     .sidebar .playlist {
         display: none;
     }
-    
+
     .top-sidebar .menu a{
         display: none;
     }
@@ -349,8 +388,8 @@ a{
         transform: scale(0.7);
     }
 
-    /* Fine Sidebar */ 
-    
+    /* Fine Sidebar */
+
     .top-bar{
         width: calc(100% - 70px);
     }
@@ -362,10 +401,10 @@ a{
     }
     .bottom-sidebar{
         min-width: 70px;
-        
+
     }
 
-    
+
 
 }
 
