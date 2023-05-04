@@ -10,10 +10,10 @@ body,input {
 
 /* UTILITà */
 .row{
+    height: 100%;
     width: 100%;
     display: flex;
 }
-
 ul{
     list-style-type: none;
 }
@@ -267,21 +267,36 @@ a{
 .col-33{
     width: calc(100%/3 - 20px);
     margin: 10px;
-    min-height: 50px;
+    min-height: 100%;
     border: 1px dashed rgb(132, 132, 132);
-}
-.name-song{
    
-    
 }
 
-.name-song img{
-    width: 20%;
+.bottom-bar .name-song{
+    display: flex;
+    align-items: center;
 }
+
+.bottom-bar .name-song img{
+    width: 50px;
+}
+
+.name-song ul li{
+    margin-left:10px;
+    color: white;
+}
+
+.bottom-bar .name-song .icons{
+    margin-left: 50px;
+
+}
+
+
+
+
+
 
 /* FINE BOTTOM BAR */
-
-
 
 
 
