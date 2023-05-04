@@ -192,10 +192,10 @@
                 <!-- COL LEFT -->
                 <div class="col-33">
                     <!-- Brano nome -->
-                    <div class="name-song">
+                    <div class="song">
                         <img src="./img/sinister.jpeg" alt="">
                         <ul>
-                            <li><strong>Sinister</strong></li>
+                            <li id="name-album">Sinister</li>
                             <li>Brano Nome</li>
                         </ul>
                         <!-- Icons -->
@@ -209,15 +209,38 @@
                         </div>
                     </div>
                 </div>
-                <!-- COL CENTER - PLAY -->
+                <!-- COL CENTER - AUDIO PLAYER -->
                 <div class="col-33">
                     <div class="audio-player">
+                        <!-- Col Up Player-->
                         <div class="col-up">
-                            zz
+                            <button>
+                                <i class="fas fa-shuffle" style="color: #ffffff;"></i>
 
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                            </button>
+                            <!-- button Play -->
+                            <button class="button-play">
+                                <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                            </button>
+                            <!-- fine button Play -->
+                            <button>
+                                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+                            </button>
                         </div>
+                        <!-- Col Down Player -->
                         <div class="col-down">
-                            zz
+                            
+                            <!-- barra min. canzone -->
+                            <div class="line-volume" id="line-player">
+                                <div class="line-inside"><div class="pallino"></div></div>
+                            </div>
+                         
 
                         </div>
                         
@@ -239,9 +262,8 @@
                         </button>
                         <!-- barra volume -->
                         <div class="line-volume">
-                            <div class="line-inside"></div>
+                            <div class="line-inside"><div class="pallino"></div></div>
                         </div>
-
                     </div>
 
                 </div>
