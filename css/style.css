@@ -405,7 +405,7 @@ a{
 
 
 /* SCREEN MD */
-@media screen and (max-width:1200px){
+@media screen and (max-width:800px){
     .row {
         flex-wrap: wrap;;
     }
@@ -425,7 +425,7 @@ a{
 
 
 /* SCREEN XS */
-@media screen and (max-width:500px){
+@media screen and (max-width:510px){
 
     .row {
         flex-wrap: wrap;
