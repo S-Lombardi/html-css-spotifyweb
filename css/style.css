@@ -129,7 +129,7 @@ ul{
 
 .top-bar input{
     position: absolute;
-    right: 20px;
+    right: 50px;
     padding:10px 50px;
     top:50%;
     transform: translateY(-50%);
@@ -138,6 +138,10 @@ ul{
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
+}
+
+.top-bar input:hover{
+    scale: 1.2;
 }
 
 
