@@ -37,9 +37,10 @@ a{
 .top-bar{
     width: calc(100% - 200px);
     height: 80px;
-    background-color: rgba(63, 63, 63, 0.679);
+    background-color: rgba(63, 63, 63, 0.593);
     position: fixed;
     top:0;
+    z-index: 20;
 }
 .main-content{
     width: calc(100% - 200px);
@@ -292,8 +293,9 @@ a{
 .col-16 img {
     width: 100%;
     margin-bottom: 10px;
+    /* position: relative; */
 }
-.col-16 img:hover{
+.col-16 .square:hover img{
     filter: opacity(50%);
     cursor: pointer;
 }
@@ -307,14 +309,37 @@ a{
 
 .content-square-img strong{
     color: white;
+    font-size: 13px;
 }
 .content-square-img span{
     color: gray;
-    font-size: 13px;
+    font-size: 11px;
 }
 
+.content-square-img .square{
+    position: relative;
+}
 
+.square:hover .play-in-img {
+    display: block;
+    visibility: visible;
+   
+}
 
+.play-in-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 80px;
+}
 
 
 
