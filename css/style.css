@@ -67,17 +67,17 @@ a{
 /* TOP-SIDEBAR */
 .top-sidebar{
     width: 100%;
-    border: 1px dashed rgb(255, 255, 255);
-
+    /* border: 1px dashed rgb(255, 255, 255); */
 }
 
 .logo{
     width: calc(100% - 20px);
     margin: 10px;
-    border: 1px dashed rgb(255, 255, 255);
+    /* border: 1px dashed rgb(255, 255, 255); */
 }
 .logo .logo-big{
     width: 80%;
+    margin-bottom: 15px;
 }
 
 .logo .logo-small{
@@ -87,7 +87,7 @@ a{
 .menu{
     width: calc(100% - 20px);
     margin: 10px;
-    border: 1px dashed rgb(109, 109, 109);
+    /* border: 1px dashed rgb(109, 109, 109); */
 }
 
 .menu ul li a{
@@ -103,16 +103,18 @@ a{
     display: flex;
     align-items: center;
 }
-
 .menu ul li img{
     width: 20%;
     filter: brightness(70%);
+}
+.menu ul li:hover img{
+    filter: brightness(100%);
 }
 
 .playlist{
     width: calc(100% - 20px);
     margin: 10px;
-    border: 1px dashed rgb(255, 255, 255);
+    /* border: 1px dashed rgb(255, 255, 255); */
 }
 
 .playlist span{
