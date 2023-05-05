@@ -356,7 +356,7 @@ a{
 .square:hover .play-in-img {
     display: block;
     visibility: visible;
-   
+    cursor: pointer;
 }
 
 .play-in-img {
@@ -366,15 +366,13 @@ a{
     left: 50%;
     display: none;
     visibility: hidden;
-    width: 80px;
-    height: 80px;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     background-color:rgba(0, 0, 0, 0);
     border: none;
     font-size: 80px;
 }
-
-
 
 /* FINE CONTENUTI */
 /***************** FINE MAIN ***************/
