@@ -235,7 +235,19 @@ a{
     color: gray;
 }
 
+.content-albums hr{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(98, 255, 0);
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .content-albums ul a:hover{
+    color: white;
 }
 
 /* Fine Menu contenuti */
@@ -253,12 +265,17 @@ a{
 .col-16{
     width: calc(100%/6 - 20px);
     margin: 10px;
-    border: 2px dashed black;
+    border: 1px dashed rgb(157, 157, 157);
     display: flex;
 }
 .col-16 img {
     width: 100%;
 }
+
+
+
+
+
 
 .title-played{
     margin-left: 10px; 
@@ -286,8 +303,6 @@ a{
     width: calc(100%/3 - 20px);
     margin: 10px;
     min-height: 100%;
-    border: 1px dashed rgb(132, 132, 132);
-
 }
 /* Col-left */
 .bottom-bar .song{
