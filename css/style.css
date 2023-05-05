@@ -48,7 +48,7 @@ a{
     top:0;
     right:0;
     padding-top: 90px;
-    padding-bottom: 120px;
+    padding-bottom: 170px;
     background-color:#141922;
 }
 
@@ -95,20 +95,20 @@ a{
     font-size: 14px;
 }
 
-.menu ul li a:hover{
+.menu ul li:hover a{
     color:white;
 }
-
 .menu ul li{
     display: flex;
     align-items: center;
 }
 .menu ul li img{
     width: 20%;
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 .menu ul li:hover img{
     filter: brightness(100%);
+    cursor: pointer;
 }
 
 .playlist{
@@ -160,21 +160,17 @@ a{
     overflow: auto;
 }
 
-.name-playlist{
-    overflow: auto;
-}
-
 /* FINE TOP-SIDEBAR */
 
 
 /* BOTTOM-SIDEBAR */
 .bottom-sidebar{
     min-width: 200px;
-    /* margin: 10px; */
     min-height: 100px;
-    border: 1px dashed rgb(255, 255, 255);
+    /* border: 1px dashed rgb(255, 255, 255); */
     position: fixed;
     bottom: 90px;
+    background-color: black;
 }
 
 .download, .username{
@@ -207,23 +203,12 @@ a{
     color: white;
 }
 
-
-
-
-
 .username{
     width: calc(100% - 20px);
     margin: 10px;
     min-height: 40px;
     border: 1px dashed rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
 
 /* FINE BOTTOM-SIDEBAR */
 
@@ -285,7 +270,7 @@ a{
 .content-albums .container {
     width: 100%;
     margin: 0 auto;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 /* Recenlty Played */
@@ -312,7 +297,7 @@ a{
 .col-16{
     width: calc(100%/6 - 20px);
     margin: 10px;
-    border: 1px dashed rgb(157, 157, 157);
+    /* border: 1px dashed rgb(157, 157, 157); */
     display: flex;
     flex-direction: column;
     align-items: center;
