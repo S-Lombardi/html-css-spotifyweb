@@ -10,7 +10,6 @@ body,input {
 
 /* UTILITà */
 .row{
-    height: 100%;
     width: 100%;
     display: flex;
 }
@@ -143,11 +142,6 @@ a{
     color: white;
 }
 
-.wrap-name-playlist{
-    width: 100%;
-    height: 100px;
-}
-
 .name-playlist li{
     line-height: 30px;
     font-size: 14px;
@@ -159,14 +153,14 @@ a{
 }
 
 .wrap-name-playlist{
-    height: 200px;
-    overflow-y: auto;
+    display: block;
+    height:30vh;
+    overflow: auto;
 }
 
-/* .wrap-name-playlist::-webkit-scrollbar-thumb{
-    background: red;
-    border-radius: 10px;
-} */
+.name-playlist{
+    overflow: auto;
+}
 
 /* FINE TOP-SIDEBAR */
 
@@ -319,34 +313,35 @@ a{
     border: 1px dashed rgb(157, 157, 157);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 /* Square img */
 .col-16 img {
     width: 100%;
-    margin-bottom: 10px;
-    /* position: relative; */
+    margin-bottom: 15px;
 }
 .col-16 .square:hover img{
     filter: opacity(50%);
     cursor: pointer;
 }
 .content-square-img{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 25px;
 }
 
 .content-square-img strong{
     color: white;
-    font-size: 13px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 9px;
 }
 .content-square-img span{
     color: gray;
-    font-size: 11px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .content-square-img .square{
