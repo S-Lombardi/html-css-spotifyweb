@@ -262,20 +262,6 @@ a{
 .content-albums .played, .jhon-doe{
     margin-bottom: 30px;
 }
-.col-16{
-    width: calc(100%/6 - 20px);
-    margin: 10px;
-    border: 1px dashed rgb(157, 157, 157);
-    display: flex;
-}
-.col-16 img {
-    width: 100%;
-}
-
-
-
-
-
 
 .title-played{
     margin-left: 10px; 
@@ -292,6 +278,44 @@ a{
     display: block;
     color: gray;
 }
+
+.col-16{
+    width: calc(100%/6 - 20px);
+    margin: 10px;
+    border: 1px dashed rgb(157, 157, 157);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Square img */
+.col-16 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.col-16 img:hover{
+    filter: opacity(50%);
+    cursor: pointer;
+}
+.content-square-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
+
+.content-square-img strong{
+    color: white;
+}
+.content-square-img span{
+    color: gray;
+    font-size: 13px;
+}
+
+
+
+
 
 
 /* FINE CONTENUTI */
