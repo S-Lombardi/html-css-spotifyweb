@@ -168,7 +168,6 @@ a{
     border-radius: 10px;
 } */
 
-
 /* FINE TOP-SIDEBAR */
 
 
@@ -177,18 +176,44 @@ a{
     min-width: 200px;
     /* margin: 10px; */
     min-height: 100px;
-    background-color: rgb(0, 149, 255);
     border: 1px dashed rgb(255, 255, 255);
     position: fixed;
     bottom: 90px;
 }
 
-.download{
+.download, .username{
     width: calc(100% - 20px);
     margin: 10px;
-    min-height: 40px;
     border: 1px dashed rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
 }
+.download img{
+    width: 20px;
+}
+.download a{
+    margin-left: 10px;
+    color: gray;
+    font-size: 12px;
+    cursor: pointer;
+}
+.download:hover a{
+    color: white
+}
+
+.username img{
+    width: 25px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 50%;
+}
+
+.username span{
+    color: white;
+}
+
+
+
+
 
 .username{
     width: calc(100% - 20px);
@@ -196,6 +221,14 @@ a{
     min-height: 40px;
     border: 1px dashed rgb(255, 255, 255);
 }
+
+
+
+
+
+
+
+
 /* FINE BOTTOM-SIDEBAR */
 
 /****************** MAIN **************/
@@ -536,12 +569,28 @@ border-radius: 50%;
         width: 100%;
         transform: scale(0.7);
     }
+    .download a{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .username span{
+        display: none;
+        visibility: hidden;
+    }
+
+    .download, .username{
+        justify-content: center;
+    }
+
 
     /* Fine Sidebar */
+
 
     .top-bar{
         width: calc(100% - 70px);
     }
+
     .main-content{
         width: calc(100% - 70px);
     }
